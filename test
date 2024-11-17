@@ -1,1 +1,5 @@
-
+A = Matrix([[1,2,-1],[2,-3,2],[-2,2,1]]);
+lmbda = symbols('lambda')
+characteristic_matrix = A - lmbda*eye(3)
+polynomial = det(characteristic_matrix)
+print (polynomial)
